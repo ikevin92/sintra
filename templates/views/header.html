@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Brand</title>
+    <title>SINTRAELECOLVALLE</title>
     <link rel="stylesheet" href={% static "bootstrap/css/bootstrap.min.css" %}>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
     <link rel="stylesheet" href={% static "fonts/fontawesome-all.min.css" %}>
@@ -42,8 +42,8 @@
                         <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation"
                                 href="{% url 'generales:convenciones' %}"><strong>Convenciones Y Laudos Arbitrales</strong></a><a
                                 class="dropdown-item" role="presentation"
-                                href="estatutos.html"><strong>Estatutos</strong></a><a class="dropdown-item"
-                                role="presentation" href="junta-directiva.html"><strong>Junta Directiva
+                                href="{% url 'generales:estatutos' %}"><strong>Estatutos</strong></a><a class="dropdown-item"
+                                role="presentation" href="{% url 'generales:junta' %}"><strong>Junta Directiva
                                     Nacional</strong></a><a class="dropdown-item" role="presentation"
                                 href="#"><strong>Organigrama</strong></a>
                             <div class="dropdown-divider" role="presentation"></div><a class="dropdown-item"
@@ -51,11 +51,11 @@
                         </div>
                     </li>
                     <li class="nav-item" role="presentation" style="width:142px;"><a class="nav-link"
-                            href="comunicados.html">COMUNICADOS</a></li>
-                    <li class="nav-item" role="presentation" style="width:107px;"><a class="nav-link active" href="#"
+                            href="{% url 'generales:comunicados' %}">COMUNICADOS</a></li>
+                    <li class="nav-item" role="presentation" style="width:107px;"><a class="nav-link active" href="{% url 'generales:formatos' %}"
                             style="height:34px;width:84px;">FORMATOS</a></li>
                     <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown"
-                            aria-expanded="false" href="#">SUBDIRECTIVAS&nbsp;</a>
+                            aria-expanded="false" href=="{% url 'generales:subdirectivas' %}"">SUBDIRECTIVAS&nbsp;</a>
                         <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation"
                                 href="#"><strong>Subdirectiva Cali</strong></a><a class="dropdown-item"
                                 role="presentation" href="#"><strong>Subdirectiva&nbsp;Dagua</strong></a><a

@@ -1,0 +1,41 @@
+{% extends  'base/base.html' %}
+
+{% load static %}
+{% block content %}
+<main class="page project-page">
+    <section class="portfolio-block project">
+        <div class="heading">
+            <h3>CONVENCIONES Y LAUDOS ARBITRALES</h3>
+        </div>
+        <div class="container">
+            <div>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-1">SUBDIRECTIVA
+                            CALI</a></li>
+                    <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-2">SUBDIRECTIVA
+                            DAGUA</a></li>
+                    <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="tab"
+                            href="#tab-3">SUBDIRECTIVA PALMIRA</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane" role="tabpanel" id="tab-1">
+                        <p>Informacion</p>
+                        <div class="col"><i class="icon ion-checkmark-round" style="color:rgb(73,130,88);"></i><a
+                                href="#">&nbsp;Junta Directiva Sintraelecol Subdirectiva Dagua</a></div>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="tab-2">
+                        <p>Informacion</p>
+                        <div class="col"><i class="fa fa-check"></i><a href="#">&nbsp;Junta Directiva Sintraelecol
+                                Subdirectiva Dagua</a></div>
+                    </div>
+                    <div class="tab-pane active" role="tabpanel" id="tab-3">
+                        <p>INFORMACION</p>
+                        <div class="col"><i class="fa fa-check"></i><a href="#">&nbsp;Junta Directiva Sintraelecol
+                                Subdirectiva Palmira</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}
