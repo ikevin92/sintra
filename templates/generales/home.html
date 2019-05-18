@@ -1,152 +1,184 @@
 {% extends  'base/base.html' %}
 
 {% load static %}
+
 {% block content %}
-
-
-
-    <main class="page lanidng-page">
-        <section id="carousel">
-            <div class="carousel slide" data-ride="carousel" id="carousel-1">
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item" style="width:100%;height:auto;">
-                        <div class="jumbotron pulse animated hero-nature carousel-hero" style="background-image:url(&quot;{% static 'img/Electrico.jpg' %}&quot;);">
-                            <h1 class="hero-title" style="color:#3a784a;background-color:rgba(255,255,255,0.18);"><strong>SINTRAELECOL</strong></h1>
-                            <p class="hero-subtitle" style="background-color:rgba(58,120,74,0.25);"><strong>Subdirectiva Valle Del Cauca</strong></p>
-                            <p><a class="btn btn-primary hero-button plat" role="button" href="#"><strong>¿Quienes Somos?</strong></a></p>
-                        </div>
+<main class="page lanidng-page">
+    <section id="carousel">
+        <div class="carousel slide" data-ride="carousel" id="carousel-1">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item" style="width:100%;height:auto;">
+                    <div class="jumbotron pulse animated hero-nature carousel-hero"
+                        style="background-image:url(&quot;{% static 'img/Electrico.jpg' %}&quot;);">
+                        <h1 class="hero-title" style="color:#3a784a;background-color:rgba(255,255,255,0.18);">
+                            <strong>SINTRAELECOL</strong></h1>
+                        <p class="hero-subtitle" style="background-color:rgba(58,120,74,0.25);"><strong>Subdirectiva
+                                Valle Del Cauca</strong></p>
+                        <p><a class="btn btn-primary hero-button plat" role="button" href="#"><strong>¿Quienes
+                                    Somos?</strong></a></p>
                     </div>
-               
-                    <div class="carousel-item">
-                        <div class="jumbotron pulse animated hero-photography carousel-hero" style="background-image:url(&quot;{% static 'img/Lineas.jpg' %}&quot;);">
-                            <h1 class="hero-title" style="color:#3a784a;background-color:rgba(255,255,255,0.24);"><strong>SINTRAELECOL</strong></h1>
-                            <p class="hero-subtitle" style="color:#ffffff;background-color:rgba(58,120,74,0.28);"><strong>Sintraelecol es la organizacion sindical nacional de industria, del sector electrico colombiano, que propende por la defensa de los derechos de los afiliados</strong></p>
-                            <p><a class="btn btn-primary hero-button plat" role="button" href="#"><strong>¿Quienes Somos?</strong></a></p>
-                        </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="jumbotron pulse animated hero-photography carousel-hero"
+                        style="background-image:url(&quot;{% static 'img/Lineas.jpg' %}&quot;);">
+                        <h1 class="hero-title" style="color:#3a784a;background-color:rgba(255,255,255,0.24);">
+                            <strong>SINTRAELECOL</strong></h1>
+                        <p class="hero-subtitle" style="color:#ffffff;background-color:rgba(58,120,74,0.28);">
+                            <strong>Sintraelecol es la organizacion sindical nacional de industria, del sector electrico
+                                colombiano, que propende por la defensa de los derechos de los afiliados</strong></p>
+                        <p><a class="btn btn-primary hero-button plat" role="button" href="#"><strong>¿Quienes
+                                    Somos?</strong></a></p>
                     </div>
-                    <div class="carousel-item active">
-                        <div class="jumbotron pulse animated hero-technology carousel-hero" style="background-image:url(&quot;{% static 'img/TrabajadoresCelsia.jpg' %}&quot;);">
-                            <h1 class="hero-title" style="color:#3a784a;background-color:rgba(255,255,255,0.25);"><strong>SINTRAELECOL</strong></h1>
-                            <p class="hero-subtitle" style="background-color:rgba(58,120,74,0.61);"><strong>Sindicato de trabajadores electricos de colombia con 44 años de experiencia.</strong></p>
-                            <p><a class="btn btn-primary hero-button plat" role="button" href="#"><strong>¿Quienes Somos?</strong></a></p>
+                </div>
+                <div class="carousel-item active">
+                    <div class="jumbotron pulse animated hero-technology carousel-hero"
+                        style="background-image:url(&quot;{% static 'img/TrabajadoresCelsia.jpg' %}&quot;);">
+                        <h1 class="hero-title" style="color:#3a784a;background-color:rgba(255,255,255,0.25);">
+                            <strong>SINTRAELECOL</strong></h1>
+                        <p class="hero-subtitle" style="background-color:rgba(58,120,74,0.61);"><strong>Sindicato de
+                                trabajadores electricos de colombia con 44 años de experiencia.</strong></p>
+                        <p><a class="btn btn-primary hero-button plat" role="button" href="#"><strong>¿Quienes
+                                    Somos?</strong></a></p>
+                    </div>
+                </div>
+            </div>
+            <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev"><i
+                        class="fa fa-chevron-left"></i><span class="sr-only">Previous</span></a><a
+                    class="carousel-control-next" href="#carousel-1" role="button" data-slide="next"><i
+                        class="fa fa-chevron-right"></i><span class="sr-only">Next</span></a></div>
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-1" data-slide-to="0"></li>
+                <li data-target="#carousel-1" data-slide-to="1"></li>
+                <li data-target="#carousel-1" data-slide-to="2" class="active"></li>
+            </ol>
+        </div>
+    </section>
+    <section class="portfolio-block website gradient">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-12 col-lg-5 offset-lg-1 text">
+                    <h3>Quienes Somos</h3>
+                    <p>Sintraelecol es la organización sindical nacional de industria, del sector eléctrico colombiano,
+                        que propende por la defensa de los derechos de sus afiliados, su núcleo familiar, de la
+                        población menos favorecida y la continuidad
+                        de las empresas. Busca la integración y la actuación con las demás organizaciones sindicales
+                        afines, nacionales e internacionales para influir en la transformación política, económica y
+                        social para un mejor país.&nbsp;</p>
+                    <button class="btn btn-primary" type="button">Seguir Leyendo</button>
+                </div>
+                <div class="col-md-12 col-lg-5">
+                    <div class="portfolio-laptop-mockup">
+                        <div class="screen">
+                            <div class="screen-content"
+                                style="background-image:url(&quot;{% static 'img/TrabajadoresCelsia2.jpg' %}&quot;);">
+                            </div>
+                        </div>
+                        <div class="keyboard"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio-block skills">
+        <div class="container">
+            <div class="heading">
+                <h2>la UNION HACE LA FUERZA</h2>
+                <p><em>Somos una organización en continua evolución con un norte claro: la defensa de los derechos de
+                        los trabajadores en beneficio del su estabilidad laboral y &nbsp;bienestar de sus familia.</em>
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card special-skill-item border-0">
+                        <div class="card-header bg-transparent border-0"><i class="icon ion-android-done-all"></i></div>
+                        <div class="card-body" style="background-color:rgba(58,120,74,0.07);">
+                            <h3 class="card-title">AFILIACION SINDICAL</h3>
+                            <p class="card-text">Promovemos la participacion de nuestros empleados por medio de la
+                                afiliacion SINDICAL.</p>
                         </div>
                     </div>
                 </div>
-                <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev"><i class="fa fa-chevron-left"></i><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next"><i class="fa fa-chevron-right"></i><span class="sr-only">Next</span></a></div>
-                <ol
-                    class="carousel-indicators">
-                    <li data-target="#carousel-1" data-slide-to="0"></li>
-                    <li data-target="#carousel-1" data-slide-to="1"></li>
-                    <li data-target="#carousel-1" data-slide-to="2" class="active"></li>
-                    </ol>
+                <div class="col-md-4">
+                    <div class="card special-skill-item border-0">
+                        <div class="card-header bg-transparent border-0"><i class="icon ion-ios-bookmarks"></i></div>
+                        <div class="card-body" style="background-color:rgba(58,120,74,0.07);">
+                            <h3 class="card-title">EDUCACION SINDICAL</h3>
+                            <p class="card-text">Promovemos la educacion a traves de cursos y seminarios en diferentes
+                                temas de interes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card special-skill-item border-0">
+                        <div class="card-header bg-transparent border-0"><i class="icon ion-android-done-all"></i></div>
+                        <div class="card-body" style="background-color:rgba(58,120,74,0.07);">
+                            <h3 class="card-title">VINCULACION DIRECTA</h3>
+                            <p class="card-text">Promovemos la negociacion con empleadores para generar la vinculacin
+                                directa de los trabajadores tercerizados.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card special-skill-item border-0">
+                        <div class="card-header bg-transparent border-0"><i class="icon ion-android-done-all"></i></div>
+                        <div class="card-body" style="background-color:rgba(58,120,74,0.07);">
+                            <h3 class="card-title">FORMACION</h3>
+                            <p class="card-text">Promovemos la participacion de nuestros empleados por medio de la
+                                afiliacion SINDICAL.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card special-skill-item border-0">
+                        <div class="card-header bg-transparent border-0"><i class="icon ion-ios-body"></i></div>
+                        <div class="card-body" style="background-color:rgba(58,120,74,0.07);">
+                            <h3 class="card-title">CONVENIOS</h3>
+                            <p class="card-text">Promovemos la participacion de nuestros empleados por medio de la
+                                afiliacion SINDICAL.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card special-skill-item border-0">
+                        <div class="card-header bg-transparent border-0"><i class="icon ion-android-done-all"></i></div>
+                        <div class="card-body" style="background-color:rgba(58,120,74,0.07);">
+                            <h3 class="card-title">AFILIACION SINDICAL</h3>
+                            <p class="card-text">Promovemos la participacion de nuestros empleados por medio de la
+                                afiliacion SINDICAL.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-        <section class="portfolio-block website gradient">
-            <div class="container">
+        </div>
+        <section class="portfolio-block mobile-app gradient">
+            <div class="container align-items-center">
                 <div class="row align-items-center">
-                    <div class="col-md-12 col-lg-5 offset-lg-1 text">
-                        <h3>Quienes Somos</h3>
-                        <p>Sintraelecol es la organización sindical nacional de industria, del sector eléctrico colombiano, que propende por la defensa de los derechos de sus afiliados, su núcleo familiar, de la población menos favorecida y la continuidad
-                            de las empresas. Busca la integración y la actuación con las demás organizaciones sindicales afines, nacionales e internacionales para influir en la transformación política, económica y social para un mejor país.&nbsp;</p>
-                        <button
-                            class="btn btn-primary" type="button">Seguir Leyendo</button>
-                    </div>
-                    <div class="col-md-12 col-lg-5">
-                        <div class="portfolio-laptop-mockup">
-                            <div class="screen">
-                                <div class="screen-content" style="background-image:url(&quot;{% static 'img/TrabajadoresCelsia2.jpg' %}&quot;);"></div>
-                            </div>
-                            <div class="keyboard"></div>
+                    <div class="col-md-12 col-lg-3 offset-lg-2">
+                        <div class="portfolio-phone-mockup">
+                            <div class="phone-screen"
+                                style="background-image:url(&quot;{% static 'img/Universidad.png' %} &quot;);"></div>
+                            <div class="home-button"></div>
                         </div>
+                    </div>
+                    <div class="col-md-12 col-lg-5 text">
+                        <h3>NUESTROS CONVENIOS</h3>
+                        <p><strong>Aprovecha estos Beneficios</strong><br>1 Convenio educativo
+                            <strong>SINTRAELECOL</strong> y <strong>UNIAGUSTINIANA</strong><br>2 Descuento del 20% para
+                            Programas de pregrado y 20% de Posgrado.<br>3 Tarifas especiales
+                            en Programas de Idiomas (CALEX) y Tecnologi (CETA)<br><br><strong>Sintraelecol te invita
+                                hacer parte de la CUN</strong><br>Obten el descuento en el valor de la matricula</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="portfolio-block skills">
-            <div class="container">
-                <div class="heading">
-                    <h2>la UNION HACE LA FUERZA</h2>
-                    <p><em>Somos una organización en continua evolución con un norte claro: la defensa de los derechos de los trabajadores en beneficio del su estabilidad laboral y &nbsp;bienestar de sus familia.</em></p>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card special-skill-item border-0">
-                            <div class="card-header bg-transparent border-0"><i class="icon ion-android-done-all"></i></div>
-                            <div class="card-body" style="background-color:rgba(58,120,74,0.07);">
-                                <h3 class="card-title">AFILIACION SINDICAL</h3>
-                                <p class="card-text">Promovemos la participacion de nuestros empleados por medio de la afiliacion SINDICAL.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card special-skill-item border-0">
-                            <div class="card-header bg-transparent border-0"><i class="icon ion-ios-bookmarks"></i></div>
-                            <div class="card-body" style="background-color:rgba(58,120,74,0.07);">
-                                <h3 class="card-title">EDUCACION SINDICAL</h3>
-                                <p class="card-text">Promovemos la educacion a traves de cursos y seminarios en diferentes temas de interes.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card special-skill-item border-0">
-                            <div class="card-header bg-transparent border-0"><i class="icon ion-android-done-all"></i></div>
-                            <div class="card-body" style="background-color:rgba(58,120,74,0.07);">
-                                <h3 class="card-title">VINCULACION DIRECTA</h3>
-                                <p class="card-text">Promovemos la negociacion con empleadores para generar la vinculacin directa de los trabajadores tercerizados.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card special-skill-item border-0">
-                            <div class="card-header bg-transparent border-0"><i class="icon ion-android-done-all"></i></div>
-                            <div class="card-body" style="background-color:rgba(58,120,74,0.07);">
-                                <h3 class="card-title">FORMACION</h3>
-                                <p class="card-text">Promovemos la participacion de nuestros empleados por medio de la afiliacion SINDICAL.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card special-skill-item border-0">
-                            <div class="card-header bg-transparent border-0"><i class="icon ion-ios-body"></i></div>
-                            <div class="card-body" style="background-color:rgba(58,120,74,0.07);">
-                                <h3 class="card-title">CONVENIOS</h3>
-                                <p class="card-text">Promovemos la participacion de nuestros empleados por medio de la afiliacion SINDICAL.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card special-skill-item border-0">
-                            <div class="card-header bg-transparent border-0"><i class="icon ion-android-done-all"></i></div>
-                            <div class="card-body" style="background-color:rgba(58,120,74,0.07);">
-                                <h3 class="card-title">AFILIACION SINDICAL</h3>
-                                <p class="card-text">Promovemos la participacion de nuestros empleados por medio de la afiliacion SINDICAL.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <section class="portfolio-block mobile-app gradient">
-                <div class="container align-items-center">
-                    <div class="row align-items-center">
-                        <div class="col-md-12 col-lg-3 offset-lg-2">
-                            <div class="portfolio-phone-mockup">
-                                <div class="phone-screen" style="background-image:url(&quot;{% static 'img/Universidad.png' %} &quot;);"></div>
-                                <div class="home-button"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-5 text">
-                            <h3>NUESTROS CONVENIOS</h3>
-                            <p><strong>Aprovecha estos Beneficios</strong><br>1 Convenio educativo <strong>SINTRAELECOL</strong> y <strong>UNIAGUSTINIANA</strong><br>2 Descuento del 20% para Programas de pregrado y 20% de Posgrado.<br>3 Tarifas especiales
-                                en Programas de Idiomas (CALEX) y Tecnologi (CETA)<br><br><strong>Sintraelecol te invita hacer parte de la CUN</strong><br>Obten el descuento en el valor de la matricula</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <h2 class="text-center"><strong>SEDE SINTRAELECOL CALI</strong></h2><iframe allowfullscreen="" frameborder="0" width="100%" height="400" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDmy59hAiztBBMuPfv20-pZ1RJCfU6a_t8&amp;q=Cra.+14+%2311+47%2C+Cali%2C+Valle+del+Cauca&amp;zoom=17"></iframe>
-            <section></section>
-        </section>
-    </main>
+        <h2 class="text-center"><strong>SEDE SINTRAELECOL CALI</strong></h2><iframe allowfullscreen="" frameborder="0"
+            width="100%" height="400"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDmy59hAiztBBMuPfv20-pZ1RJCfU6a_t8&amp;q=Cra.+14+%2311+47%2C+Cali%2C+Valle+del+Cauca&amp;zoom=17"></iframe>
+        <section></section>
+    </section>
+</main>
 
 </html>
 
- {% endblock content %}
+{% endblock content %}
