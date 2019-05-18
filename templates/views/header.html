@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href={% static "bootstrap/css/bootstrap.min.css" %}>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href={% static "fonts/font-awesome.min.css" %}>
+    <link rel="stylesheet" href={% static "fonts/ionicons.min.css" %}>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href={% static "css/Article-Clean.css" %}>
+    <link rel="stylesheet" href={% static "css/Article-List.css" %}>
+    <link rel="stylesheet" href={% static "css/best-carousel-slide.css" %}>
+    <link rel="stylesheet" href={% static "css/Customizable-Carousel-swipe-enabled.css" %}>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+    <link rel="stylesheet" href={% static "css/untitled-1.css" %}>
+    <link rel="stylesheet" href={% static "css/untitled-2.css" %}>
+    <link rel="stylesheet" href={% static "css/untitled-3.css" %}>
+    <link rel="stylesheet" href={% static "css/untitled-4.css" %}>
+    <link rel="stylesheet" href={% static "css/untitled-5.css" %}>
+    <link rel="stylesheet" href={% static "css/untitled.css" %}>
+</head>
+
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
+        <div class="container"><a class="navbar-brand logo" href="{% url 'generales:home' %}" style="font-size:15px;"><img src={% static "img/Logotipo.png" %} style="width:50px;height:50px;">&nbsp;<strong>SINTRAELECOL</strong><br></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav navbar-nav ml-auto" style="background-color:rgba(255,255,255,0.11);">
+                    <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false">¿QUIENES SOMOS?&nbsp;</a>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="convensiones.html"><strong>Convenciones Y Laudos Arbitrales</strong></a><a class="dropdown-item" role="presentation" href="estatutos.html"><strong>Estatutos</strong></a><a class="dropdown-item"
+                                role="presentation" href="junta-directiva.html"><strong>Junta Directiva Nacional</strong></a><a class="dropdown-item" role="presentation" href="#"><strong>Organigrama</strong></a>
+                            <div class="dropdown-divider" role="presentation"></div><a class="dropdown-item" role="presentation" href="historia.html"><strong>Historia</strong></a></div>
+                    </li>
+                    <li class="nav-item" role="presentation" style="width:142px;"><a class="nav-link" href="comunicados.html">COMUNICADOS</a></li>
+                    <li class="nav-item" role="presentation" style="width:107px;"><a class="nav-link active" href="#" style="height:34px;width:84px;">FORMATOS</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">SUBDIRECTIVAS&nbsp;</a>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#"><strong>Subdirectiva Cali</strong></a><a class="dropdown-item" role="presentation" href="#"><strong>Subdirectiva&nbsp;Dagua</strong></a><a class="dropdown-item" role="presentation"
+                                href="#"><strong>Subdirectiva&nbsp;Palmira</strong></a></div>
+                    </li>
+                    <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">NOTICIAS&nbsp;</a>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="{% url 'noticias:listado' %}"><strong>Economicas</strong></a><a class="dropdown-item" role="presentation" href="#"><strong>Educacion</strong></a><a class="dropdown-item" role="presentation" href="#"><strong>Internacionales</strong><br></a>
+                            <a
+                                class="dropdown-item" role="presentation" href="#"><strong>Juridico</strong></a><a class="dropdown-item" role="presentation" href="#"><strong>Laboral</strong></a><a class="dropdown-item" role="presentation" href="#"><strong>Nacional</strong></a><a class="dropdown-item" role="presentation"
+                                    href="#"><strong>Opinion</strong></a><a class="dropdown-item" role="presentation" href="#"><strong>Politica</strong></a><a class="dropdown-item" role="presentation" href="#"><strong>Salud</strong></a><a class="dropdown-item"
+                                    role="presentation" href="#"><strong>Tecnologia</strong></a></div>
+                    </li>
+                </ul>
+        </div>
+        </div>
+    </nav>

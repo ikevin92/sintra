@@ -1,0 +1,22 @@
+{% extends  'base/base.html' %}
+{% block  content %}
+<div class="article-list">
+    <div class="container">
+        <div class="intro">
+            <h2 class="text-center">NOTICIAS</h2>
+        </div>
+        <div class="row articles">
+            {% for n  in noticias %}
+            <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="{{n.imagen.url}}"></a>
+            
+                <h3 class="name">{{n.titulo}}</h3>
+                <p class="description">{{n.cuerpo|linebreaks}}<a href="#" class="action"><i
+                        class="fa fa-arrow-circle-right"></i></a>
+            </div>
+            {% endfor %}
+
+
+        </div>
+    </div>
+</div>
+{% endblock %}
