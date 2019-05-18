@@ -11,9 +11,10 @@ class NoticiaListView(ListView):
     paginate_by = 3
     context_object_name='noticias'
 
-def noticiasList(request):
-    noticias= Noticia.objects.all()
+def noticiasList(request, id_seccion):
+    noticias= Noticia.objects.filter(seccion__pk=id_seccion)
+    secciones = SeccionNoticia.objects.all()
     template = "noticias/listado.html"
-    return render(request,template, {'noticias':noticias})
+    return render(request, template, {'noticias': noticias,'secciones': secciones})
 
-
+  

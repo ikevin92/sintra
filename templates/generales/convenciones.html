@@ -1,0 +1,35 @@
+{% extends "base/base.html" %}
+{% load static %}
+{% block content %}
+<main class="page project-page">
+    <section class="portfolio-block project">
+        <div class="heading">
+            <h3>CONVENCIONES Y LAUDOS ARBITRALES</h3>
+        </div>
+        <div class="container">
+            <div>
+                <ul class="nav nav-tabs">
+                    {% for cat in categorias %}
+                    <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab"
+                            href="#tab-{{cat.pk}}">{{cat.nombre}}</a></li>
+                    {% endfor %}
+                </ul>
+
+                <div class="tab-content" style="height:220px;">
+
+                    {% for item in convenciones %}
+                    <div class="tab-pane" role="tabpanel" id="tab-{{item.categoria.pk}}">
+
+                        <p>Convencion Colectiva {{item.categoria.nombre}}</p>
+                        <div class="col"><i class="icon ion-checkmark-round" style="color:rgb(73,130,88);"></i><a
+                                href="{{item.archivo.url}}">&nbsp;{{item.nombre}}</a></div>
+                    </div>
+                    {% endfor %}
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock content %}
