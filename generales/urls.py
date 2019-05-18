@@ -14,7 +14,8 @@ urlpatterns = [
     path('comunicados', comunicados, name='comunicados'),
     path('formatos', formatos, name='formatos'),
 
-     path('subdirectivas', subdirectivas, name='subdirectivas'),
+    path('subdirectivas', subdirectivas, name='subdirectivas'),
+    path('contactanos', contactanos, name='contactanos'),
     # enrutamiento login
 
 ]

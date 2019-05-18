@@ -70,6 +70,11 @@ def subdirectivas(request):
     template = "generales/subdirectivas.html"
     return render(request, template, {'secciones': secciones})
 
+def contactanos(request):
+    secciones = SeccionNoticia.objects.all()
+    template = "generales/contactanos.html"
+    return render(request, template, {'secciones': secciones})
+
 
 class Estatutos(generic.TemplateView):
     template_name = 'generales/estatutos.html'
