@@ -26,7 +26,7 @@ SECRET_KEY = 'wolov^1-6gpz8d@p-8lv9c7^a7to_ely28)kb+djbfd9l^uw&8'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+#ALLOWED_HOSTS = ["sebashvare.pythonanywhere.com", '*','webapp-601491.pythonanywhere.com', "www.sintraelecolvalle.org", 'sintraelecolvalle.org']
 
 # Application definition
 
@@ -109,9 +109,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
-LANGUAGE_CODE = 'eS'
+LANGUAGE_CODE = 'es'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Bogota'
 
 USE_I18N = True
 
