@@ -9,12 +9,13 @@ class Noticia(models.Model):
         ("Imagen Noticia"),
         upload_to='noticias'
     )
+
     titulo = models.CharField(
         ("Ingrese Titulo Noticia"),
         max_length=50
     )
 
-    cuerpo = models.TextField(("Cuerpo Noticia"))
+    cuerpo = RichTextField(("Cuerpo Noticia"))
     seccion = models.ForeignKey('SeccionNoticia',
                                 verbose_name=("Seccion Noticia"),
                                 on_delete=models.CASCADE
@@ -32,6 +33,8 @@ class Noticia(models.Model):
 
         verbose_name = ("Noticia")
         verbose_name_plural = ("Noticia")
+        ordering = ['-creado']
+
 
 
 class SeccionNoticia(models.Model):

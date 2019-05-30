@@ -17,4 +17,12 @@ def noticiasList(request, id_seccion):
     template = "noticias/listado.html"
     return render(request, template, {'noticias': noticias,'secciones': secciones})
 
+def noticiaDetail(request, id_noticia):
+    noticia= Noticia.objects.get(pk=id_noticia)
+    print(id_noticia)
+    print(noticia)
+    secciones = SeccionNoticia.objects.all()
+    template = "noticias/detalle.html"
+    return render(request, template, {'noticia': noticia,'secciones': secciones})
+
   

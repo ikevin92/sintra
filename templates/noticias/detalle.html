@@ -1,0 +1,18 @@
+{% extends  'base/base.html' %}
+{% block  content %}
+{% load static %}
+<main class="page project-page"></main>
+<div class="article-clean">
+    <div class="container" style="height:8000px;">
+        <div class="row">
+            <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                <div class="intro">
+                    <h1 class="text-center">{{noticia.titulo}}</h1><img class="img-fluid" src="{{noticia.imagen.url}}"></div>
+                <div class="text">
+                    <p><br>{{noticia.cuerpo|safe }}<br></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
